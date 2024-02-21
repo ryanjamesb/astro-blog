@@ -1,5 +1,6 @@
 ---
 const {title, description} = Astro.props;
+import MainNav from "../components/MainNav.astro"
 ---
 
 <html lang="en">
@@ -8,9 +9,10 @@ const {title, description} = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{("Bowker's Fiberglass | " + Astro.props.title)}</title>
+		<title>{("RyanB | " + Astro.props.title)}</title>
 	</head>
 	<body>
+        <MainNav></MainNav>
 		<slot></slot>
 	</body>
 </html>
